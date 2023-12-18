@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaptopFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/lytLaptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/baseline_search_24" />
+
+        <EditText
+            android:id="@+id/etvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_toRightOf="@id/imgSearch"
+            android:background="@color/white"
+            android:hint="SEARCH"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_toRightOf="@id/etvSearch"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/close"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/laptopRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSearch"
+            android:padding="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
