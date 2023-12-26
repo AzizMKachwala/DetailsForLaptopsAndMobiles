@@ -73,6 +73,8 @@ public class MobileAdapter extends RecyclerView.Adapter<MobileAdapter.MobileData
                 intent.putExtra("UploadedDate", mobileDataModel.uploadedDate);
                 intent.putExtra("Category", mobileDataModel.category);
                 context.startActivity(intent);
+
+
             }
         });
     }
